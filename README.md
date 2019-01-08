@@ -1,3 +1,5 @@
+# 功能展示
+[点此观看](https://quiethear.github.io/showInterface/API接口文档展示.html "API接口文档展示")(建议右键新建窗口查看)
 # 说明文档
 > ### 使用场景
 >> 用于后端向前端和APP展示API接口文档的页面
