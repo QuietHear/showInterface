@@ -1,0 +1,170 @@
+body {
+  font: normal normal 14px "Times New Roman", "Microsoft YaHei"; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+button {
+  outline: none;
+  background: none; }
+
+@keyframes normalIt {
+  from {
+    transform: rotate(90deg); }
+  to {
+    transform: rotate(0deg); } }
+@keyframes rotateIt {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(90deg); } }
+body {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.01); }
+
+header {
+  font-size: 20px;
+  text-align: center;
+  background: blanchedalmond;
+  padding: 20px 0;
+  color: #e4393c;
+  margin-bottom: 20px; }
+
+section {
+  display: flex;
+  position: relative; }
+  section .left {
+    width: 350px;
+    background: #ededed;
+    padding: 10px 0;
+    overflow-y: auto; }
+    section .left ul {
+      transition: height 250ms;
+      overflow: hidden; }
+      section .left ul.hide {
+        height: 0; }
+      section .left ul li .tit {
+        height: 30px;
+        align-items: center;
+        font-size: 14px;
+        display: flex;
+        padding-left: 30px;
+        position: relative; }
+        section .left ul li .tit b {
+          position: absolute;
+          left: 10px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: transparent transparent transparent rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+          transform: rotate(0deg); }
+          section .left ul li .tit b.route {
+            transform: rotate(90deg); }
+        section .left ul li .tit a {
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      section .left ul li.parent .tit b {
+        display: block; }
+      section .left ul li.child .tit b {
+        display: none; }
+  section .right {
+    width: calc(100% - 450px);
+    padding-left: 10px;
+    margin-left: 50px;
+    background: #ededed; }
+    section .right h1 {
+      font-size: 30px; }
+    section .right h2 {
+      font-size: 20px; }
+    section .right .item {
+      margin-bottom: 10px;
+      padding: 10px 0;
+      box-sizing: border-box; }
+      section .right .item > ul {
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background: #fff; }
+        section .right .item > ul > li {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+          display: flex; }
+          section .right .item > ul > li:last-child {
+            border-bottom: 0; }
+          section .right .item > ul > li > div {
+            height: 40px;
+            font-size: 16px;
+            line-height: 40px;
+            box-sizing: border-box; }
+            section .right .item > ul > li > div.itemLeft {
+              width: 10%;
+              border-right: 1px solid rgba(0, 0, 0, 0.5);
+              text-align: center; }
+            section .right .item > ul > li > div.itemRight {
+              width: 90%;
+              padding-left: 10px; }
+              section .right .item > ul > li > div.itemRight > div {
+                display: flex;
+                width: 100%;
+                height: 30px; }
+                section .right .item > ul > li > div.itemRight > div.title {
+                  border-bottom: 1px dotted rgba(0, 0, 0, 0.5); }
+                section .right .item > ul > li > div.itemRight > div.parameter {
+                  border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+                section .right .item > ul > li > div.itemRight > div:last-child {
+                  border-bottom: 0; }
+                section .right .item > ul > li > div.itemRight > div > div {
+                  height: 100%;
+                  align-items: center;
+                  justify-content: center;
+                  display: flex;
+                  box-sizing: border-box; }
+              section .right .item > ul > li > div.itemRight.out > div > div:nth-child(1) {
+                width: 12%; }
+              section .right .item > ul > li > div.itemRight.out > div > div:nth-child(2) {
+                width: 40%; }
+              section .right .item > ul > li > div.itemRight.out > div > div:nth-child(3) {
+                width: 12%; }
+              section .right .item > ul > li > div.itemRight.out > div > div:nth-child(4) {
+                width: 12%; }
+              section .right .item > ul > li > div.itemRight.out > div > div:nth-child(5) {
+                width: 12%; }
+              section .right .item > ul > li > div.itemRight.out > div > div:nth-child(6) {
+                width: 12%; }
+              section .right .item > ul > li > div.itemRight.in > div.parameter > div:nth-child(1) {
+                justify-content: left;
+                padding-left: 10px; }
+              section .right .item > ul > li > div.itemRight.in > div > div:nth-child(1) {
+                width: 20%; }
+              section .right .item > ul > li > div.itemRight.in > div > div:nth-child(2) {
+                width: 60%; }
+              section .right .item > ul > li > div.itemRight.in > div > div:nth-child(3) {
+                width: 20%; }
+          section .right .item > ul > li.else > div {
+            height: auto;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; }
+            section .right .item > ul > li.else > div.itemLeft {
+              justify-content: center; }
+            section .right .item > ul > li.else > div.itemRight {
+              padding-left: 0; }
+  section.fixed .left {
+    position: fixed;
+    top: 0;
+    height: 100%; }
+  section.fixed .right {
+    margin-left: 400px; }
+
+/*# sourceMappingURL=showInterface.css.map */

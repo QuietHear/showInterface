@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API及接口文档展示页面</title>
+    <link rel="stylesheet" href="css/showInterface.css">
+</head>
+<body>
+<header>API接口文档展示</header>
+<section>
+    <!--导航-->
+    <div class="left">
+        <ul>
+            <li class="parent">
+                <div class="tit"><b class="route"></b><a href="#a1" title="大类1">大类1</a></div>
+                <ul style="margin-left: 20px;">
+                    <li class="parent">
+                        <div class="tit"><b class="route"></b><a href="#a11" title="分类1">分类1</a></div>
+                        <ul style="margin-left: 40px;">
+                            <li class="child">
+                                <div class="tit"><b class="route"></b><a href="#a111"
+                                                           title="接口1">接口1</a>
+                                </div>
+                            </li>
+                            <li class="child">
+                                <div class="tit"><b class="route"></b><a href="#a112" title="接口2">接口2</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="parent">
+                        <div class="tit"><b class="route"></b><a href="#a12" title="分类2">分类2</a></div>
+                        <ul style="margin-left: 40px;">
+                            <li class="child">
+                                <div class="tit"><b class="route"></b><a href="#a121" title="接口1">接口1</a></div>
+                            </li>
+                            <li class="child">
+                                <div class="tit"><b class="route"></b><a href="#a122" title="接口2">接口2</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="parent">
+                <div class="tit"><b class="route"></b><a href="#a2" title="大类2">大类2</a></div>
+                <ul style="margin-left: 20px;">
+                    <li class="parent">
+                        <div class="tit"><b class="route"></b><a href="#a21" title="分类1">分类1</a></div>
+                        <ul style="margin-left: 40px;">
+                            <li class="child">
+                                <div class="tit"><b class="route"></b><a href="#a211" title="接口1">接口1</a></div>
+                            </li>
+                            <li class="child">
+                                <div class="tit"><b class="route"></b><a href="#a212" title="接口2">接口2</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="parent">
+                        <div class="tit"><b class="route"></b><a href="#a22" title="分类2">分类2</a></div>
+                        <ul style="margin-left: 40px;">
+                            <li class="child">
+                                <div class="tit"><b class="route"></b><a href="#a221" title="接口1">接口1</a></div>
+                            </li>
+                            <li class="child">
+                                <div class="tit"><b class="route"></b><a href="#a222" title="接口2">接口2</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--内容-->
+    <div class="right">
+        <div id="a1">
+            <h1>大类1</h1>
+            <div id="a11">
+                <h2 style="margin-left: 20px;">分类1</h2>
+                <div id="a111" class="item">
+                    <ul>
+                        <li>
+                            <div class="itemLeft">接口名</div>
+                            <div class="itemRight">/customer/add</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">接口描述</div>
+                            <div class="itemRight">客户添加</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">请求类型</div>
+                            <div class="itemRight">GET</div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">接收参数</div>
+                            <div class="itemRight out">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                    <div>是否必需</div>
+                                    <div>最小长度</div>
+                                    <div>最大长度</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">返回字段</div>
+                            <div class="itemRight in">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <!--<pre>-->
+                                <!--{-->
+                                <!--'name':父元素名称,-->
+                                <!--'children':[-->
+                                <!--{-->
+                                <!--childName:子元素名称,-->
+                                <!--childId:子元素ID-->
+                                <!--}-->
+                                <!--]-->
+                                <!--}-->
+                                <!--</pre>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="a112" class="item">
+                    <ul>
+                        <li>
+                            <div class="itemLeft">接口名</div>
+                            <div class="itemRight">/customer/add</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">接口描述</div>
+                            <div class="itemRight">客户添加</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">请求类型</div>
+                            <div class="itemRight">GET</div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">接收参数</div>
+                            <div class="itemRight out">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                    <div>是否必需</div>
+                                    <div>最小长度</div>
+                                    <div>最大长度</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">返回字段</div>
+                            <div class="itemRight in">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <!--<pre>-->
+                                <!--{-->
+                                <!--'name':父元素名称,-->
+                                <!--'children':[-->
+                                <!--{-->
+                                <!--childName:子元素名称,-->
+                                <!--childId:子元素ID-->
+                                <!--}-->
+                                <!--]-->
+                                <!--}-->
+                                <!--</pre>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="a12">
+                <h2 style="margin-left: 20px;">分类2</h2>
+                <div id="a121" class="item">
+                    <ul>
+                        <li>
+                            <div class="itemLeft">接口名</div>
+                            <div class="itemRight">/customer/add</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">接口描述</div>
+                            <div class="itemRight">客户添加</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">请求类型</div>
+                            <div class="itemRight">GET</div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">接收参数</div>
+                            <div class="itemRight out">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                    <div>是否必需</div>
+                                    <div>最小长度</div>
+                                    <div>最大长度</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">返回字段</div>
+                            <div class="itemRight in">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <!--<pre>-->
+                                <!--{-->
+                                <!--'name':父元素名称,-->
+                                <!--'children':[-->
+                                <!--{-->
+                                <!--childName:子元素名称,-->
+                                <!--childId:子元素ID-->
+                                <!--}-->
+                                <!--]-->
+                                <!--}-->
+                                <!--</pre>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="a122" class="item">
+                    <ul>
+                        <li>
+                            <div class="itemLeft">接口名</div>
+                            <div class="itemRight">/customer/add</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">接口描述</div>
+                            <div class="itemRight">客户添加</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">请求类型</div>
+                            <div class="itemRight">GET</div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">接收参数</div>
+                            <div class="itemRight out">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                    <div>是否必需</div>
+                                    <div>最小长度</div>
+                                    <div>最大长度</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">返回字段</div>
+                            <div class="itemRight in">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <!--<pre>-->
+                                <!--{-->
+                                <!--'name':父元素名称,-->
+                                <!--'children':[-->
+                                <!--{-->
+                                <!--childName:子元素名称,-->
+                                <!--childId:子元素ID-->
+                                <!--}-->
+                                <!--]-->
+                                <!--}-->
+                                <!--</pre>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="a2">
+            <h1>大类2</h1>
+            <div id="a21">
+                <h2 style="margin-left: 20px;">分类1</h2>
+                <div id="a211" class="item">
+                    <ul>
+                        <li>
+                            <div class="itemLeft">接口名</div>
+                            <div class="itemRight">/customer/add</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">接口描述</div>
+                            <div class="itemRight">客户添加</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">请求类型</div>
+                            <div class="itemRight">GET</div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">接收参数</div>
+                            <div class="itemRight out">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                    <div>是否必需</div>
+                                    <div>最小长度</div>
+                                    <div>最大长度</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">返回字段</div>
+                            <div class="itemRight in">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <!--<pre>-->
+                                <!--{-->
+                                <!--'name':父元素名称,-->
+                                <!--'children':[-->
+                                <!--{-->
+                                <!--childName:子元素名称,-->
+                                <!--childId:子元素ID-->
+                                <!--}-->
+                                <!--]-->
+                                <!--}-->
+                                <!--</pre>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="a212" class="item">
+                    <ul>
+                        <li>
+                            <div class="itemLeft">接口名</div>
+                            <div class="itemRight">/customer/add</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">接口描述</div>
+                            <div class="itemRight">客户添加</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">请求类型</div>
+                            <div class="itemRight">GET</div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">接收参数</div>
+                            <div class="itemRight out">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                    <div>是否必需</div>
+                                    <div>最小长度</div>
+                                    <div>最大长度</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">返回字段</div>
+                            <div class="itemRight in">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <!--<pre>-->
+                                <!--{-->
+                                <!--'name':父元素名称,-->
+                                <!--'children':[-->
+                                <!--{-->
+                                <!--childName:子元素名称,-->
+                                <!--childId:子元素ID-->
+                                <!--}-->
+                                <!--]-->
+                                <!--}-->
+                                <!--</pre>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="a22">
+                <h2 style="margin-left: 20px;">分类2</h2>
+                <div id="a221" class="item">
+                    <ul>
+                        <li>
+                            <div class="itemLeft">接口名</div>
+                            <div class="itemRight">/customer/add</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">接口描述</div>
+                            <div class="itemRight">客户添加</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">请求类型</div>
+                            <div class="itemRight">GET</div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">接收参数</div>
+                            <div class="itemRight out">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                    <div>是否必需</div>
+                                    <div>最小长度</div>
+                                    <div>最大长度</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">返回字段</div>
+                            <div class="itemRight in">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <!--<pre>-->
+                                <!--{-->
+                                <!--'name':父元素名称,-->
+                                <!--'children':[-->
+                                <!--{-->
+                                <!--childName:子元素名称,-->
+                                <!--childId:子元素ID-->
+                                <!--}-->
+                                <!--]-->
+                                <!--}-->
+                                <!--</pre>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="a222" class="item">
+                    <ul>
+                        <li>
+                            <div class="itemLeft">接口名</div>
+                            <div class="itemRight">/customer/add</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">接口描述</div>
+                            <div class="itemRight">客户添加</div>
+                        </li>
+                        <li>
+                            <div class="itemLeft">请求类型</div>
+                            <div class="itemRight">GET</div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">接收参数</div>
+                            <div class="itemRight out">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                    <div>是否必需</div>
+                                    <div>最小长度</div>
+                                    <div>最大长度</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                    <div>true</div>
+                                    <div>0</div>
+                                    <div>10</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="else">
+                            <div class="itemLeft">返回字段</div>
+                            <div class="itemRight in">
+                                <div class="title">
+                                    <div>字段名</div>
+                                    <div>字段描述</div>
+                                    <div>字段类型</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|————customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <div class="parameter">
+                                    <div>|——customerName</div>
+                                    <div>客户姓名</div>
+                                    <div>string</div>
+                                </div>
+                                <!--<pre>-->
+                                <!--{-->
+                                <!--'name':父元素名称,-->
+                                <!--'children':[-->
+                                <!--{-->
+                                <!--childName:子元素名称,-->
+                                <!--childId:子元素ID-->
+                                <!--}-->
+                                <!--]-->
+                                <!--}-->
+                                <!--</pre>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery1.9.min.js"></script>
+<script src="js/showInterface.js"></script>
+</body>
+</html>
